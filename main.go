@@ -29,8 +29,15 @@ api := router.Group("/api")
 	server.OnConnection(func(player *mcwss.Player){
 player.Tell("Hello %s!", player.Name())
 })
+
 	server.OnDisconnection(func(player *mcwss.Player){
 	})
 	go server.Run()
-	router.Run(":8100")
+go thing()
+router.Run(":8100")
+}
+
+func thing() {
+player.OnItemUsed(*event.ItemUsed)
+
 }
