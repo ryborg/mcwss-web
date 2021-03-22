@@ -33,11 +33,11 @@ player.Tell("Hello %s!", player.Name())
 	server.OnDisconnection(func(player *mcwss.Player){
 	})
 	go server.Run()
-go thing()
+//go thing()
 router.Run(":8100")
 }
 
-func thing() {
-player.OnItemUsed(*event.ItemUsed)
-
-}
+//func thing() {
+//player.OnItemUsed(*event.ItemUsed)
+//
+//}
